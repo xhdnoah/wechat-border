@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container" style='height: {{windowHeight}}px'>
+  <view id='add'><text class='iconfont icon-tianjia' hidden="{{!hidden ? true : false}}" bindtap='chooseImg'></text></view>
+  <view class='canvas-box' hidden="{{hidden ? true : flase}}" bindlongpress='saveImg'><canvas canvas-id='borderCanvas' class="canvas" disable-scroll='true' style='width:{{canW}}px; height:{{canW}}px;' ></canvas></view>
+  <view class='slider-box'>
+    <text class='color'>{{chooseColor.name}}</text>
+    <slider class='slider' bindchange='borderSizeChange' min='0' max='12' step ='0.1' block-size='12' activeColor='lightgrey' value='0' block-size='28' show-value/>
+  </view>
+  <scroll-view class='color-box' scroll-x>
+    <radio-group>
+    <label wx:for="{{allColor}}" data-selected='{{item}}' bindtap='colorChange'>
+    <radio class='color-point' data-selected='{{item}}' style="background:{{item.color}}" ></radio>
+    </label>
+    </radio-group>
+  </scroll-view>
+  <view class="usermotto">
+    <span class="iconfont icon-chahao" id="chahao" bindtap='closeImg'></span>
+    <span class="text">{{motto}}</span>
+    <span class="iconfont icon-icon-check" id="check" bindtap='previewImg'></span>
+  </view>
+</view>

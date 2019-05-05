@@ -1,0 +1,93 @@
+/**index.wxss**/
+
+
+.container {
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+.canvas-box {
+  position: fixed;
+  top: 80rpx;
+  left: 0;
+  right: 0;
+}
+.canvas {
+  position: absolute;
+}
+
+.color-box {
+  position: absolute;
+  left: 0;
+  bottom: 8%;
+  width: 100%;
+  display: inline-block;
+  overflow: scroll;
+  white-space: nowrap;
+}
+radio .wx-radio-input{
+  display: none;
+}
+.color {
+  font-size: 25rpx;
+  color:white;
+  margin-left: 75rpx;
+}
+.color-point {
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  margin: 20rpx 20rpx;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4rpx transparent;
+}
+
+.color-point[checked] {
+  box-shadow: 0 0 0 5rpx #fff;
+}
+
+label:nth-child(2)>radio{
+  box-shadow: 0 0 0 2rpx #fff;
+}
+
+.slider-box {
+  width: 100%;
+  position: absolute;
+  bottom: 20%;
+  margin: 0 auto;
+}
+.slider {
+  margin: 12rpx 30rpx 0 80rpx;
+}
+.usermotto {
+  position: fixed;
+  width: 100%;
+  bottom: 30rpx;
+  color: white;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+#chahao {
+  margin-left: 45rpx;
+  float: left;
+}
+
+.text {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 48rpx;
+}
+
+#check {
+  float: right;
+  margin-right: 45rpx;
+}
+
+#add {
+  margin-top: 420rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
